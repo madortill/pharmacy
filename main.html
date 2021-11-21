@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/media/1home/ahami.svg">
+    <link rel="shortcut icon" href="assets/media/2content/head_happy.svg">
     <link rel="stylesheet" href="assets/JQuery/jquery-ui.css">
     <link rel="stylesheet" href="style.css">
     <script src="assets/JQuery/jquery-3.4.1.min.js"></script>
@@ -12,50 +12,169 @@
     <title>מרפאה וחצי</title>
   </head>
   <body>
-<div id="main">
-  <!-- opening-->
-  <div id="opening" class="page background">
-    <div class="container">
-      <div id="symbols" class="flex">
-        <div id="about" class="button background move">אודות</div>
-        <img id="till" class="symbol" src="assets/media/1home/till_logo.svg">
-        <img id="bhd-10" class="symbol" src="assets/media/1home/bhd_10_logo.svg">
+    <div id="main">
+      <!-- opening -->
+      <div id="opening" class="page background">
+        <div class="container">
+          <div id="symbols" class="flex">
+            <div id="about-button" class="button background move">אודות</div>
+            <img id="till" class="symbol" src="assets/media/1home/till_logo.svg">
+            <img id="bhd-10" class="symbol" src="assets/media/1home/bhd_10_logo.svg">
+          </div>
+          <div id="rooms" class="flex">
+            <div id="room-button-1" class="flex button room-button background abled">
+              <div class="room-name smooth-16">חדר קבלה</div>
+            </div>
+            <div id="room-button-2" class="flex button room-button background enabled">
+              <div class="room-name smooth-16">חדר טיפולים</div>
+            </div>
+            <div id="room-button-3" class="flex button room-button background enabled">
+              <div class="room-name smooth-16">חדר רופא</div>
+            </div>
+            <div id="room-button-4" class="flex button room-button background enabled">
+              <div class="room-name smooth-16">חדר תרופות</div>
+            </div>
+          </div>
+          <span id="opening-text" class="flex">
+            <div class="bold">ברוכים הבאים ל-</div>
+            <img id="opening-title" src="assets/media/1home/title_mirpaa_vahezi.svg">
+            <div>אחמי הוא אחראי מרפאה די מפוזר... בבקשה היכנסו איתו לכל החדרים לפי הסדר ועזרו לו לארגן אותם!</div>
+            <img id="asterix" src="assets/media/1home/note_bubble.svg">
+          </span>
+          <img id="ahami" src="assets/media/1home/ahami.svg">
+        </div>
       </div>
-      <div id="rooms" class="flex">
-        <div id="room-button-1" class="flex button room-button background abled">
-          <div class="room-name smooth-16">חדר קבלה</div>
+
+      <!-- about -->
+      <div id="about" class="page background notebook">
+        <div class="container">
+          <div class="background bold title little-title">אודות</div>
         </div>
-        <div id="room-button-2" class="flex button room-button background enabled">
-          <div class="room-name smooth-16">חדר טיפולים</div>
-        </div>
-        <div id="room-button-3" class="flex button room-button background enabled">
-          <div class="room-name smooth-16">חדר רופא</div>
-        </div>
-        <div id="room-button-4" class="flex button room-button background enabled">
-          <div class="room-name smooth-16">חדר תרופות</div>
-        </div>
-        <!-- <img id="room-button-1" class="room-button abled" src="assets/media/1home/room_waiting.svg">
-        <img id="room-button-2" class="room-button enabled" src="assets/media/1home/room_treatment.svg">
-        <img id="room-button-3" class="room-button enabled" src="assets/media/1home/room_doctor.svg">
-        <img id="room-button-4" class="room-button enabled" src="assets/media/1home/room_drugs.svg"> -->
       </div>
-      <span id="opening-text" class="flex">
-        <div class="bold">ברוכים הבאים ל-</div>
-        <img id="opening-title" src="assets/media/1home/title_mirpaa_vahezi.svg">
-        <div>אחמי הוא אחראי מרפאה די מפוזר... בבקשה היכנסו איתו לכל החדרים לפי הסדר ועזרו לו לארגן אותם!</div>
-        <img id="asterix" src="assets/media/1home/note_bubble.svg">
-      </span>
-      <img id="ahami" src="assets/media/1home/ahami.svg">
-    </div>
-  </div>
-  <!-- general div that is used in all the opening game -->
-  <div id="general-opening-game" class="page">
-    <div class="container">
 
+      <!-- controls -->
+      <div id="controls" class="flex">
+        <div id="watch-room-button" class="button control-button background"></div>
+        <div id="back-button" class="button control-button background visible"></div>
+        <div id="next-button" class="button control-button background visible"></div>
+        <div id="lesson-map-1" class="flex background lesson-map none">
+          <div class="topic-1 topic background">
+            <div class="tooltip">תחזוקת החדר</div>
+          </div>
+          <div class="topic-2 topic background">
+            <div class="tooltip">שילוט בחדר</div>
+          </div>
+          <div class="topic-3 topic background">
+            <div class="tooltip">מידע למטופל</div>
+          </div>
+          <div class="topic-4 topic background">
+            <div class="tooltip">חדר קבלה</div>
+          </div>
+          <div class="topic-5 topic background">
+            <div class="tooltip">אוגדן חדר קבלה</div>
+          </div>
+        </div>
+        <div id="lesson-map-2" class="flex background lesson-map none">
+          <div class="topic-1 topic background">
+            <div class="tooltip">הרגלי עבודה</div>
+          </div>
+          <div class="topic-2 topic background">
+            <div class="tooltip">תחזוקת החדר</div>
+          </div>
+          <div class="topic-3 topic background">
+            <div class="tooltip">אוגדן</div>
+          </div>
+          <div class="topic-4 topic background">
+            <div class="tooltip">רשימות</div>
+          </div>
+          <div class="topic-5 topic background">
+            <div class="tooltip">שילוט</div>
+          </div>
+          <div class="topic-6 topic background">
+            <div class="tooltip">אפוד</div>
+          </div>
+          <div class="topic-7 topic background">
+            <div class="tooltip">דפיברילטור</div>
+          </div>
+          <div class="topic-8 topic background">
+            <div class="tooltip">דגימות מעבדה</div>
+          </div>
+          <div class="topic-9 topic background">
+            <div class="tooltip">שולחן טיפולים</div>
+          </div>
+          <div class="topic-10 topic background">
+            <div class="tooltip">הנחיות לשולחן טיפולים</div>
+          </div>
+          <div class="topic-11 topic background">
+            <div class="tooltip">שילוט בשולחן טיפולים</div>
+          </div>
+        </div>
+        <div id="lesson-map-3" class="flex background lesson-map none">
+          <div class="topic-1 topic background">
+            <div class="tooltip">הרגלי עבודה</div>
+          </div>
+          <div class="topic-2 topic background">
+            <div class="tooltip">תחזוקת החדר</div>
+          </div>
+          <div class="topic-3 topic background">
+            <div class="tooltip">עגלת טיפולים</div>
+          </div>
+          <div class="topic-4 topic background">
+            <div class="tooltip">אוגדן</div>
+          </div>
+          <div class="topic-5 topic background">
+            <div class="tooltip">שילוט</div>
+          </div>
+          <div class="topic-6 topic background">
+            <div class="tooltip">תיעוד</div>
+          </div>
+          <div class="topic-7 topic background">
+            <div class="tooltip">מעקב חריגים וכרוניים</div>
+          </div>
+        </div>
+        <div id="lesson-map-4" class="flex background lesson-map">
+          <div class="topic-1 topic background">
+            <div class="tooltip">תחזוקת החדר</div>
+          </div>
+          <div class="topic-2 topic background">
+            <div class="tooltip">אוגדן</div>
+          </div>
+          <div class="topic-3 topic background">
+            <div class="tooltip">שילוט</div>
+          </div>
+          <div class="topic-4 topic background">
+            <div class="tooltip">ארון תרופות</div>
+          </div>
+          <div class="topic-5 topic background">
+            <div class="tooltip">מערכת תומ"ר</div>
+          </div>
+          <div class="topic-6 topic background">
+            <div class="tooltip">סמים ותרופות בפיקוח</div>
+          </div>
+          <div class="topic-7 topic background">
+            <div class="tooltip">שבר בתרופה</div>
+          </div>
+          <div class="topic-8 topic background">
+            <div class="tooltip">צר"פ פג תוקף</div>
+          </div>
+          <div class="topic-9 topic background">
+            <div class="tooltip">מכשור רפואי</div>
+          </div>
+          <div class="topic-10 topic background">
+            <div class="tooltip">מומחים</div>
+          </div>
+          <div class="topic-11 topic background">
+            <div class="tooltip">אחסון בקירור</div>
+          </div>
+          <div class="topic-12 topic background">
+            <div class="tooltip">תקלה בקירור</div>
+          </div>
+          <div class="topic-13 topic background">
+            <div class="tooltip">גלילי גז</div>
+          </div>
+        </div>
+        <img id="topic-counter" src="assets/media/2content/head_happy.svg">
+      </div>
     </div>
-  </div>
-
-    </div>
-  </div>
   </body>
 </html>
