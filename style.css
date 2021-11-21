@@ -59,6 +59,162 @@ body, #main {
   cursor: pointer;
 }
 
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.notebook {
+  background-image: url("assets/media/2content/content_bg.svg");
+}
+
+.title {
+  font-size: 4vw;
+  height: 5.6vw;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 13vh;
+}
+
+.little-title {
+  background-image: url("assets/media/2content/title_scribble_short.svg");
+  width: 13vw;
+}
+
+.big-title {
+  background-image: url("assets/media/2content/title_scribble_long.svg");
+  width: 10vw;
+}
+
+/* controls */
+
+#controls {
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.control-button {
+  width: 8vh;
+  height: 8vh;
+  margin: 0 0.3vw;
+}
+
+.lesson-map {
+  background-image: url("assets/media/2content/progress.svg");
+  width: 66%;
+  height: 90%;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 2vw;
+}
+
+#watch-room-button {
+  background-image: url("assets/media/2content/map_normal.svg");
+}
+
+#watch-room-button:hover {
+  background-image: url("assets/media/2content/map_hover.svg");
+}
+
+#watch-room-button:active {
+  background-image: url("assets/media/2content/map_down.svg");
+}
+
+#back-button {
+  background-image: url("assets/media/2content/back_normal.svg");
+}
+
+#back-button:hover {
+  background-image: url("assets/media/2content/back_hover.svg");
+}
+
+#back-button:active {
+  background-image: url("assets/media/2content/back_down.svg");
+}
+
+#next-button {
+  background-image: url("assets/media/2content/next_normal.svg");
+}
+
+#next-button:hover {
+  background-image: url("assets/media/2content/next_hover.svg");
+}
+
+#next-button:active {
+  background-image: url("assets/media/2content/next_down.svg");
+}
+
+.topic {
+  width: 2vw;
+  margin-top: 1vh;
+  height: 2vw;
+  background-image: url("assets/media/2content/checkpoint_normal.svg");
+}
+
+.topic .tooltip {
+  visibility: hidden;
+  width: 12vw;
+  height: 5vh;
+  color: black;
+  font-family: "Rubik-Bold";
+  font-size: 1vw;
+  text-align: center;
+  position: fixed;
+  margin-right: -5vw;
+  margin-top: -4vh;
+  opacity: 0;
+  z-index: 1;
+}
+
+.topic:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.topic-1 {
+  margin-right: 3vw !important;
+}
+
+#lesson-map-1 .topic {
+  margin-right: 11vw;
+}
+
+#lesson-map-2 .topic {
+  margin-right: 3.5vw;
+}
+
+#lesson-map-3 .topic {
+  margin-right: 7vw;
+}
+
+#lesson-map-4 .topic {
+  margin-right: 2.5vw;
+}
+
+#topic-counter {
+ width: 3vw;
+ position: relative;
+ z-index:1;
+ right: -63.5vw;
+}
+
 /* opening */
 
 #opening {
@@ -80,7 +236,7 @@ body, #main {
   height: 5vh;
 }
 
-#about {
+#about-button {
   height: 1;
   background-color: white;
   width: 4em;
@@ -99,11 +255,11 @@ body, #main {
   font-size: 2rem;
 }
 
-#about:hover {
+#about-button:hover {
   background-color: rgb(158, 158, 158);
 }
 
-#about:active {
+#about-button:active {
   background-color: black;
   border-color: white;
   color:white;
