@@ -182,9 +182,4 @@ type_content = () => {
 switch_class = (object, prevClass, currClass) => {
   object.removeClass(prevClass);
   object.assClass(currClass);
-}
-
-
-
-
-	
+}	
