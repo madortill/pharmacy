@@ -390,3 +390,19 @@ body, #main {
   bottom: 0;
   /* align-self: flex-end; */
 }
+
+/* content */
+
+.asterix {
+  width: 22vw;
+  margin-left: 2vw;
+}
+
+.flex-text {
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: flex-start;
+  width: 90vw;
+  font-size: 2rem;
+  align-items: flex-start;
+}
