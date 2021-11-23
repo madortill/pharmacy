@@ -31,6 +31,7 @@ body, #main {
   display: none;
   height: 100vh;
   width: 100vw;
+  position: absolute;
 }
 
 .background {
@@ -49,6 +50,10 @@ body, #main {
 
 .bold {
   font-family: "Rubik-Bold";
+}
+
+.gray {
+  color:rgb(26, 26, 26)
 }
 
 .flex {
@@ -85,7 +90,7 @@ body, #main {
   margin: auto;
   text-align: center;
   position: relative;
-  top: 13vh;
+  margin-top: 13vh;
 }
 
 .little-title {
@@ -95,7 +100,28 @@ body, #main {
 
 .big-title {
   background-image: url("assets/media/2content/title_scribble_long.svg");
-  width: 10vw;
+  width: 36.5vw;
+}
+
+/* rooms */
+.room {
+  z-index: 3;
+}
+
+#room-1 {
+  background-image: url("assets/media/rooms/room_kabala_bg.svg");
+}
+
+#room-2 {
+  background-image: url("assets/media/rooms/room_tipulim_bg.svg");
+}
+
+#room-3 {
+  background-image: url("assets/media/rooms/room_doctor_bg.svg");
+}
+
+#room-4 {
+  background-image: url("assets/media/rooms/room_trufot_bg.svg");
 }
 
 /* controls */
@@ -118,35 +144,40 @@ body, #main {
 
 .lesson-map {
   background-image: url("assets/media/2content/progress.svg");
-  width: 66%;
-  height: 90%;
+  width: 66vw;
+  height: 4.45vw;
   align-items: center;
   justify-content: flex-start;
   margin-right: 2vw;
 }
 
-#watch-room-button {
+.watch-room-button {
   background-image: url("assets/media/2content/map_normal.svg");
 }
 
-#watch-room-button:hover {
+.watch-room-button:hover {
   background-image: url("assets/media/2content/map_hover.svg");
 }
 
-#watch-room-button:active {
+.watch-room-button:active {
   background-image: url("assets/media/2content/map_down.svg");
 }
 
-#back-button {
+.back-button {
   background-image: url("assets/media/2content/back_normal.svg");
 }
 
-#back-button:hover {
+.back-button:hover {
   background-image: url("assets/media/2content/back_hover.svg");
 }
 
-#back-button:active {
+.back-button:active {
   background-image: url("assets/media/2content/back_down.svg");
+}
+
+.back-top-button {
+  margin-top: -11vh;
+  margin-right: 5vh;
 }
 
 #next-button {
@@ -209,7 +240,7 @@ body, #main {
 }
 
 #topic-counter {
- width: 3vw;
+ width: 4vw;
  position: relative;
  z-index:1;
  right: -63.5vw;
@@ -394,8 +425,25 @@ body, #main {
 /* content */
 
 .asterix {
-  width: 22vw;
+  width: 1.8vw;
   margin-left: 2vw;
+  margin-top: 0.4vw;
+}
+
+.attach {
+  width: 2vw;
+  height: 2vw;
+  margin-top: 0.25vw;
+  margin-left: 2vw;
+  background-image: url("assets/media/2content/attach_normal.svg");
+}
+
+.attach:hover {
+  background-image: url("assets/media/2content/attach_hover.svg");
+}
+
+.attach:active{
+  background-image: url("assets/media/2content/attach_down.svg");
 }
 
 .flex-text {
@@ -403,6 +451,7 @@ body, #main {
   margin: auto;
   justify-content: flex-start;
   width: 90vw;
-  font-size: 2rem;
+  font-size: 2vw;
   align-items: flex-start;
+  margin-top: 0.5vw;
 }
