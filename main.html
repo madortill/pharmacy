@@ -17,7 +17,7 @@
       <div id="opening" class="page background">
         <div class="container">
           <div id="symbols" class="flex">
-            <div id="about-button" class="button background move">אודות</div>
+            <div id="about-button" class="button move background">אודות</div>
             <img id="till" class="symbol" src="assets/media/1home/till_logo.svg">
             <img id="bhd-10" class="symbol" src="assets/media/1home/bhd_10_logo.svg">
           </div>
@@ -49,11 +49,18 @@
       <div id="about" class="page background notebook">
         <div class="container">
           <div class="background bold title little-title">אודות</div>
+          <div id="back-about-button" class="button move back-button back-top-button control-button background"></div>
         </div>
       </div>
 
-      <!-- room 1 -->
-      <!-- about -->
+      <!-- rooms -->
+      <div id="back-room-button" class="button move watch-room-button back-top-button control-button background none"></div>
+      <div id="room-1" class="page room background"></div>
+      <div id="room-2" class="page room background"></div>
+      <div id="room-3" class="page room background"></div>
+      <div id="room-4" class="page room background"></div>
+
+      <!-- page 1 -->
       <div id="r1p1" class="page background notebook">
         <div class="container">
           <div class="background bold title big-title">תחזוקת החדר</div>
@@ -76,11 +83,51 @@
         </div>
       </div>
 
+      <!-- page 2 -->
+      <div id="r1p2" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">שילוט החדר</div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span><span class="bold gray">מחוץ לכניסה</span> למרפאה ייתלו שלטים במקום בולט- לא על הדלת. השלטים שייתלו הם:
+            <div class="flex flex-text">
+              <div class="attach background"></div>
+              <span>שעות פעילות המרפאה.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background"></div>
+              <span>נוהל קבלת חולים למרפאה.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background"></div>
+              <span>דרכי תקשורת השגת צוות הרפואי לאחר שעות הפעילות ובמקרה חירום.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background"></div>
+              <span>המענה הרפואי לחיילי צה"ל לאחר שעות הפעילות (נוהל ביקור רופא).</span>
+            </div>
+          </div>
+          <div class="flex flex-text">
+            <img class="asterix" src="assets/media/1home/asterisk.svg">
+            <span><span class="bold gray">במרכז החדר</span> ייתלו:
+            <div class="flex flex-text">
+              <div class="attach background"></div>
+              <span>שלט של שמירה על השקט והניקיון, ואיסור על עישון.</span>
+            </div>
+            <div class="flex flex-text">
+              <div class="attach background"></div>
+              <span>אמנת השירות של חיל הרפואה.</span>
+            </div>
+          </span>
+          </div>
+        </div>
+      </div>
+
       <!-- controls -->
-      <div id="controls" class="flex">
-        <div id="watch-room-button" class="button control-button background"></div>
-        <div id="back-button" class="button control-button background visible"></div>
-        <div id="next-button" class="button control-button background visible"></div>
+      <div id="controls" class="none">
+        <div id="watch-room-button" class="button watch-room-button control-button background"></div>
+        <div id="back-button" class="button move back-button control-button background hidden"></div>
+        <div id="next-button" class="button move control-button background visible"></div>
         <div id="lesson-map-1" class="flex background lesson-map none">
           <div class="topic-1 topic background">
             <div class="tooltip">תחזוקת החדר</div>
@@ -156,7 +203,7 @@
             <div class="tooltip">מעקב חריגים וכרוניים</div>
           </div>
         </div>
-        <div id="lesson-map-4" class="flex background lesson-map">
+        <div id="lesson-map-4" class="flex background lesson-map none">
           <div class="topic-1 topic background">
             <div class="tooltip">תחזוקת החדר</div>
           </div>
