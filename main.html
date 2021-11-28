@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="assets/JQuery/jquery-3.4.1.min.js"></script>
     <script src="assets/JQuery/jquery-ui.min.js"></script>
-    <script src="code.js"></script>     
+    <script src="code.js"></script>
+    <script src="games_general.js"></script>     
     <title>מרפאה וחצי</title>
   </head>
   <body>
@@ -49,16 +50,9 @@
       <div id="about" class="page background notebook">
         <div class="container">
           <div class="background bold title little-title">אודות</div>
-          <div id="back-about-button" class="button move back-button back-top-button control-button background"></div>
+          <div id="back-about-button" class="button move back-button control-button background"></div>
         </div>
       </div>
-
-      <!-- rooms -->
-      <div id="back-room-button" class="button move watch-room-button back-top-button control-button background none"></div>
-      <div id="room-1" class="page room background"></div>
-      <div id="room-2" class="page room background"></div>
-      <div id="room-3" class="page room background"></div>
-      <div id="room-4" class="page room background"></div>
 
       <!-- page 1 -->
       <div id="r1p1" class="page background notebook">
@@ -120,6 +114,33 @@
             </div>
           </span>
           </div>
+        </div>
+      </div>
+
+      <!-- page 3- page 2's game -->
+      <div id="r1p3" class="page background">
+        <div class="container">
+        </div>
+      </div>
+
+      <!-- rooms -->
+      <div id="back-room-button" class="button watch-room-button control-button background none"></div>
+      <div id="room-1" class="page screen background"></div>
+      <div id="room-2" class="page screen background"></div>
+      <div id="room-3" class="page screen background"></div>
+      <div id="room-4" class="page screen background"></div>
+  
+      <!-- games-general -->
+      <div id="spinning-flex" class="page none">
+        <div class="vertical">
+          <img id="spinning-bg" src="assets/media/heart/round_lights.svg">
+        </div>
+     </div>
+
+      <!-- ending game -->
+      <div id="ending-game" class="page screen background">
+        <div class="container">
+          <div class="background bold title big-title">גלוג גלוג גלוג גלוג גלוג</div>
         </div>
       </div>
 
@@ -247,5 +268,16 @@
         <img id="topic-counter" src="assets/media/2content/head_happy.svg">
       </div>
     </div>
+
+    <!-- timer -->
+    <div id="timer" class="none">
+      <div id="timer-bar">
+        <img id="time-timeline" src="assets/media/3exers_general/time_bar.svg">
+      </div>
+      <img id="clock" src="assets/media/3exers_general/clock_cut.svg">
+    </div>
   </body>
 </html>
+
+
+
