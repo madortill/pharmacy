@@ -16,6 +16,7 @@
   font-weight: 800;
 }
 
+/* timer */
 @keyframes timeline {
   0% {
     object-position: 40% 0;
@@ -34,6 +35,7 @@
   }
 }
 
+/* rotating background- games ending */
 @keyframes rotate_bg {
   100% {
     transform: rotate(360deg);
@@ -45,6 +47,62 @@
     transform: rotate(360deg);
   }
 }
+
+/* heart disappear */
+@keyframes heart_pop  {
+  10% {
+    transform: scale(1.07);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1.07);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@-webkit-keyframes heart_pop  {
+  10% {
+    transform: scale(1.07);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1.07);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+/* v/x appear */
+
+@keyframes v_x  {
+  0% {
+    width: 30vw;
+  }
+
+  100% {
+    width: 20vw;
+  }
+}
+
+@-webkit-keyframes v_x  {
+  0% {
+    width: 30vw;
+  }
+
+  100% {
+    width: 20vw;
+  }
+}
+
 
 html,
 body, #main {
@@ -183,7 +241,7 @@ body, #main {
 .lesson-map {
   background-image: url("assets/media/2content/progress.svg");
   width: 66vw;
-  height: 4.45vw;
+  height: 4.4vw;
   align-items: center;
   justify-content: flex-start;
   margin-right: 2vw;
@@ -286,13 +344,9 @@ body, #main {
 
 /* game */
 #spinning-bg {
-  /* transform: translate(-50%, -50%); */
-  /* position: absolute; */
   z-index: 2;
   width: 150vw;
-  /* top: 50%;
-  left: 50%; */
-  animation: rotate_bg 90s linear infinite ; 
+  animation: rotate_bg 90s linear infinite; 
 }
 
 #spinning-flex {
@@ -310,6 +364,56 @@ body, #main {
 
 #ending-game {
   background-image: url("assets/media/heart/heart_bg.svg");
+}
+
+#ending-game-title {
+  color: rgb(252, 180, 48);
+  font-size: 9vw;
+  text-align: center;
+  --stroke-color: rgb(255, 94, 0);
+  --stroke-width: 6px;
+  letter-spacing: var(5px);
+  margin-top: 5vw;
+}
+
+/* hearts */
+
+#hearts-flex {
+  /* position: relative; */
+  width: 65vw;
+  height: 30vw;
+  /* margin: auto; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+
+.cloud-flex {
+  position: relative;
+  margin: 0 1vw;
+  width: 17vw;
+}
+
+.heart {
+  width: 17vw;
+}
+
+.cloud {
+  width: 25vw;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+}
+
+.heart-animation {
+  animation: heart_pop 0.5s linear; 
 }
 
 /* timer */
@@ -520,13 +624,13 @@ body, #main {
 /* content */
 
 .asterix {
-  width: 1.8vw;
+  width: 1.6vw;
   margin-left: 2vw;
   margin-top: 0.4vw;
 }
 
 .attach {
-  width: 2vw;
+  width: 2.055vw;
   height: 2vw;
   margin-top: 0.25vw;
   margin-left: 2vw;
@@ -545,8 +649,99 @@ body, #main {
   flex-wrap: nowrap;
   margin: auto;
   justify-content: flex-start;
-  width: 90vw;
-  font-size: 2vw;
+  width: 90%;
+  font-size: 1.85vw;
   align-items: flex-start;
-  margin-top: 0.5vw;
+  margin-top: 0.45vw;
+}
+
+.span-container {
+  width: 100%;
+}
+
+/* games */
+
+.v-x {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  width: 20vw;
+  animation: v_x 0.2s linear;
+}
+
+.instructions-flex {
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+}
+
+/* r1p3 */
+
+#r1p3 {
+  background-image: url("assets/media/exer1/exer1_bg.svg");
+}
+
+#signs-flex {
+  bottom: 7vw;
+  right: 13vw;
+  flex-wrap: wrap;
+  width: 46vw;
+  height: 31vw;
+  justify-content: space-between;
+  position: absolute;
+}
+
+#signs-flex .data-num-1, #signs-flex .data-num-2, #signs-flex .data-num-3 {
+  align-self: flex-start;
+}
+
+#signs-flex .data-num-4, #signs-flex .data-num-5, #signs-flex .data-num-6 {
+  align-self: flex-end;
+}
+
+#signs-flex .data-num-1 {
+  width: 38%
+}
+
+#signs-flex .data-num-2 {
+  width: 28%
+}
+
+#signs-flex .data-num-3 {
+  width: 25%
+}
+
+#signs-flex .data-num-4 {
+  width: 30%
+}
+
+#signs-flex .data-num-5 {
+  width: 35%
+}
+
+#signs-flex .data-num-6 {
+  width: 26%;
+}
+
+#r1p3 .ahami-head {
+  width: 5rem;
+  margin-left: 1vw;
+}
+
+#r1p3 .instructions {
+  font-size: 2.4rem;
+  width: 70vw;
+}
+
+#r1p3 .instructions-flex {
+  top: 6vh;
+  right: 2.5vw;
+}
+
+/* r1p6 */
+
+#r1p6 {
+  background-image: url("assets/media/exer2/bg_wall.svg");
 }
