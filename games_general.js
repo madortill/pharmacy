@@ -150,24 +150,12 @@ pop_timeEnds = () => {
 // adding hover and down state to objects
 // in order the function will work the items need to have the class "state" and "data-num"
 pop_hover_down = () => {
-    // add event listener for each item
-    // for (let i = 1; i <= $(`#${matrix[nRoom][nPage].divName} .state`).length ; i++) {
-    //     let item =  $(`#${matrix[nRoom][nPage].divName} .state.data-num-${i}`);
-    //     let src = item.attr("src").slice(0,-4);
-        
     let src;
     $(`#${matrix[nRoom][nPage].divName} .state`).on({
         // hover state
         mouseenter: function () {
             src = $(this).attr("src");
-
-            if (src.endsWith('_hover.svg')) {
-                src= src.slice(0, -10);
-            } else if (src.endsWith('_down.svg')){
-                src= src.slice(0, -9);
-            } else {
-                src= src.slice(0, -4);
-            }
+            src= src.slice(0, -4);
 
             $(this).attr("src", `${src}_hover.svg`);
         },
@@ -179,7 +167,6 @@ pop_hover_down = () => {
             $(this).attr("src", `${src}_down.svg`);
         }
     });
-    // } 
 }
 
 // general games
