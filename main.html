@@ -9,7 +9,8 @@
     <script src="assets/JQuery/jquery-3.4.1.min.js"></script>
     <script src="assets/JQuery/jquery-ui.min.js"></script>
     <script src="code.js"></script>
-    <script src="games_general.js"></script>     
+    <script src="games_general.js"></script>
+    <script src="room_1_games.js"></script>      
     <title>מרפאה וחצי</title>
   </head>
   <body>
@@ -83,7 +84,7 @@
           <div class="background bold title big-title">שילוט החדר</div>
           <div class="flex flex-text">
             <img class="asterix" src="assets/media/1home/asterisk.svg">
-            <span><span class="bold gray">מחוץ לכניסה</span> למרפאה ייתלו שלטים במקום בולט- לא על הדלת. השלטים שייתלו הם:
+            <span class="span-container"><span class="bold gray">מחוץ לכניסה</span> למרפאה ייתלו שלטים במקום בולט- לא על הדלת. השלטים שייתלו הם:
             <div class="flex flex-text">
               <div class="attach background"></div>
               <span>שעות פעילות המרפאה.</span>
@@ -100,10 +101,11 @@
               <div class="attach background"></div>
               <span>המענה הרפואי לחיילי צה"ל לאחר שעות הפעילות (נוהל ביקור רופא).</span>
             </div>
+          </span>
           </div>
           <div class="flex flex-text">
             <img class="asterix" src="assets/media/1home/asterisk.svg">
-            <span><span class="bold gray">במרכז החדר</span> ייתלו:
+            <span class="span-container"><span class="bold gray">במרכז החדר</span> ייתלו:
             <div class="flex flex-text">
               <div class="attach background"></div>
               <span>שלט של שמירה על השקט והניקיון, ואיסור על עישון.</span>
@@ -120,6 +122,118 @@
       <!-- page 3- page 2's game -->
       <div id="r1p3" class="page background">
         <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">אחמי התבלבל ותלה את כל השלטים מחוץ למרפאה!<br>לחצו על השלטים שאמורים להיות בפנים</div>
+          </div>
+          <div id="signs-flex" class="flex">
+            <img class="data-num-1 incorrect item state button visible" src="assets/media/exer1/exer1_emergency.svg">
+            <img class="data-num-2 incorrect item state button visible" src="assets/media/exer1/exer1_kabala.svg">
+            <img class="data-num-3 correct item state button visible" src="assets/media/exer1/exer1_smoke.svg">
+            <img class="data-num-4 correct item state button visible" src="assets/media/exer1/exer1_amana.svg">
+            <img class="data-num-5 incorrect item state button visible" src="assets/media/exer1/exer1_timetable.svg">
+            <img class="data-num-6 incorrect item state button visible" src="assets/media/exer1/exer1_bikurofe.svg">
+          </div>
+        </div>
+      </div>
+
+      <!-- page 4 -->
+      <div id="r1p4" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">מידע למטופל</div>
+          <div class="flex flex-text">בחדר ההמתנה יימצא מידע למטופלים, בחלוקה לפי נושאים:</div>
+          <div class="flex flex-text">
+            <div class="attach background"></div>
+            <span class="span-container">הנחיות רפואה <span class="bold gray">כלליות</span>:
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>שעות פעילות המרפאה והמענה הרפואי לאחריהן ובעת חופשה.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל קבלה לטיפול של בעל תפקיד (סגל/חניכים) לכל מתחם טיפולי.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל פנייה למיון/מרפאת ביקור רופא ואופן בקשת טופס 119 (הוראת קרפ"ר 281.119).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>רשימת מרפאות שיניים לעזרה ראשונה (אתר צה"ל ואפליקציית מקול הלב).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל פנייה לוועדה רפואית (הוראת קרפ"ר 701.005).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>זכויות וחובות החייל בכל הקשור בהפניות למומחים (הוראת קרפ"ר 300.007).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל פנייה ישירה של אנשי הקבע למרפאות מומחים (הוראת קרפ"ר 300.007).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל מערך הרפואה הראשונה למשרתי הקבע, הכוללות את רשימת מרפאות הקבע בצבא ואפשרות אנשי הקבע למעבר ביניהן (הוראת קרפ"ר 300.002).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>דרכי התקשרות עם מרכז המידע וזימון תורים (אתר צה"ל ואפליקציית מקול הלב).</span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 5 -->
+      <div id="r1p5" class="page background notebook">
+        <div class="container">
+          <div class="background bold title big-title">מידע למטופל</div>
+          <div class="flex flex-text">
+            <div class="attach background"></div>
+            <span class="span-container">רפואת <span class="bold gray">מומחים</span>:
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>נוהל פניית/הפניית חייל בחובה/בקבע לקב"ן.</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>רשימת מרפאות מומחים צבאיות ואזרחיות, ורשימת אופטיקאים (כולל דרכי השגתן).</span>
+              </div>
+              <div class="flex flex-text">
+                <img class="asterix" src="assets/media/1home/asterisk.svg">
+                <span>מומחי פיזיותרפיה ודרכי השגתם (אתר צה"ל, אפליקציית מקול הלב ואתר משר"פ דך הצה"לנט).</span>
+              </div>
+            </span>
+          </div>
+          <div class="flex flex-text">
+            <div class="attach background"></div>
+            <span class="span-container">רפואת <span class="bold gray">נשים</span>:
+            <div class="flex flex-text">
+              <img class="asterix" src="assets/media/1home/asterisk.svg">
+              <span>נוהל בדיקת חיילת, הכולל רשימת רופאות נשים צבאיות ואזרחיות, ונוהל פנייה למרכז מהו"ת (ראש מערך רפואת נשים במרפ"א 8282).</span>
+            </div>
+          </span>
+        </div>
+        </div>
+      </div>
+
+      <!-- page 6- page 4 and 5's game -->
+      <div id="r1p6" class="page background">
+        <div class="container">
+          <div class="instructions-flex flex">
+            <img class="ahami-head" src="assets/media/2content/head_happy.svg">
+            <div class="bold instructions">אחמי התבלבל ותלה את כל השלטים מחוץ למרפאה!<br>לחצו על השלטים שאמורים להיות בפנים</div>
+          </div>
+          <div id="signs-flex" class="flex">
+            <img class="data-num-1 incorrect item state button visible" src="assets/media/exer1/exer1_emergency.svg">
+            <img class="data-num-2 incorrect item state button visible" src="assets/media/exer1/exer1_kabala.svg">
+            <img class="data-num-3 correct item state button visible" src="assets/media/exer1/exer1_smoke.svg">
+            <img class="data-num-4 correct item state button visible" src="assets/media/exer1/exer1_amana.svg">
+            <img class="data-num-5 incorrect item state button visible" src="assets/media/exer1/exer1_timetable.svg">
+            <img class="data-num-6 incorrect item state button visible" src="assets/media/exer1/exer1_bikurofe.svg">
+          </div>
         </div>
       </div>
 
@@ -140,7 +254,23 @@
       <!-- ending game -->
       <div id="ending-game" class="page screen background">
         <div class="container">
-          <div class="background bold title big-title">גלוג גלוג גלוג גלוג גלוג</div>
+          <div id="ending-game-title" class="bold smooth-16">feedback</div>
+        </div>
+      </div>
+
+      <!-- hearts -->
+      <div id="hearts-flex" class="none">
+        <div id="heart-3" class="cloud-flex visible">
+          <img class="heart" src="assets/media/heart/heart3_happy.svg">
+          <img class="cloud none" src="assets/media/cloud-right/cloud_6.svg">
+        </div>
+        <div id="heart-2" class="cloud-flex visible">
+          <img class="heart" src="assets/media/heart/heart2_happy.svg">
+          <img class="cloud none" src="assets/media/cloud-right/cloud_6.svg">
+        </div>
+        <div id="heart-1" class="cloud-flex visible">
+          <img class="heart" src="assets/media/heart/heart1_happy.svg">
+          <img class="cloud none" src="assets/media/cloud-right/cloud_6.svg">
         </div>
       </div>
 
@@ -267,8 +397,7 @@
         </div>
         <img id="topic-counter" src="assets/media/2content/head_happy.svg">
       </div>
-    </div>
-
+    
     <!-- timer -->
     <div id="timer" class="none">
       <div id="timer-bar">
@@ -276,6 +405,11 @@
       </div>
       <img id="clock" src="assets/media/3exers_general/clock_cut.svg">
     </div>
+
+    <!-- v and x after game -->
+    <img id="v" class="v-x none" src="assets/media/3exers_general/finish_right.svg">
+    <img id="x" class="v-x none" src="assets/media/3exers_general/finish_wrong.svg">
+  </div>
   </body>
 </html>
 
