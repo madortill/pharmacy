@@ -186,10 +186,9 @@ click_identify = (item) => {
     }
 }
 
-counter_r1p7_signs_order = 0;
-arr_r1p7_signs_order = [1,2,3,4,5,6,7,8];
+
 // called to add to drop and drag
-// in order the function will work the items need to have the class "drag"/"drop"
+// in order the function will work the items need to have the class "drag" and "drop"
 //r1p7
 pop_drag_drop = () => {
     $(`#${matrix[nRoom][nPage].divName} .drag`).draggable({
@@ -201,39 +200,18 @@ pop_drag_drop = () => {
 
     for (let i = 1; i <= $(`#${matrix[nRoom][nPage].divName} .drop`).length; i++) {
         $(`#${matrix[nRoom][nPage].divName} .drop-${i}`).droppable({
-        tolerance: "intersect",
-
-        drop: function(event, ui) {
-            var $this = $(this);
-            ui.draggable.position({
-                my: "center top",
-                at: "top center",
-                of: $this,
-                using: function(pos) {
-                    $(this).animate(pos,200,"linear");
+            tolerance: "intersect",
+            drop: function(event, ui) {
+                //dropped correct
+                if (ui.draggable.hasClass(`drag-${i}`)) {
+                    r1p7_dropped_correct(ui.draggable, $(this));
                 }
-            });
-            //dropped correct
-            if (ui.draggable.hasClass(`drag-${i}`)) {
-                // disable item dragging
-                ui.draggable.draggable("option", "disabled", true);
-                // vertical position
-                if ($(this).hasClass("empty")) {
-                    ui.draggable.css("top", "10vw");
-                    $(this).removeClass("empty");
-                } else {
-                    ui.draggable.css("top", "22vw");
+                //dropped incorrect
+                else {
+                    V_X(false);
                 }
-                counter_r1p7_signs_order++;
-                //new sign appear
-                switch_class($(`#${matrix[nRoom][nPage].divName} .drag-${arr_r1p7_signs_order[counter_r1p7_signs_order]}`), "none", "block");
             }
-            //dropped incorrect
-            else {
-                V_X(false);
-            }
-        }
-    });
-}
+        });
+    }
 }
 
