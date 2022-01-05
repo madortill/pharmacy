@@ -748,7 +748,7 @@ body, #main {
 
 #r1p7 .boards-flex {
   width: 100%;
-  height: 80vw;
+  height: 35vw;
   top: 0;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -761,16 +761,31 @@ body, #main {
 
 #r1p7 .sign {
   position: absolute;
-  top: 90vw;
-  width: 10vw;
+  top: 40vw;
+  width: 14vw;
   left: 50%;
-  transform: translate(0, -50%);
+  transform: translate(-50%, 0%);
 }
 
 #r1p7 .hands {
   position: absolute;
   bottom: 0;
-  width: 10vw;
+  width: 20vw;
   left: 50%;
-  transform: translate(0, -50%);
+  transform: translate(-50%, 0%);
+}
+
+#r1p7 .ahami-head {
+  width: 8rem;
+  margin-left: 1vw;
+}
+
+#r1p7 .instructions {
+  font-size: 2.4rem;
+  width: 20vw;
+}
+
+#r1p7 .instructions-flex {
+  top: 6vh;
+  right: 2.5vw;
 }
