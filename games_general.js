@@ -14,10 +14,12 @@ type_game = () => {
     switch_class($("#controls"), "flex" ,"none");
     switch_class($(`#lesson-map-${nRoom}`), "flex" ,"none");
   
-    // display timer
-    switch_class($("#timer"), "none", "block");
-    // reset timeline
-    $("#time-timeline").css({"object-position": "40% 0", "animation-duration" : matrix[nRoom][nPage].timer});
+    if (matrix[nRoom][nPage].timer !== undefined) {
+        // display timer
+        switch_class($("#timer"), "none", "block");
+        // reset timeline
+        $("#time-timeline").css({"object-position": "40% 0", "animation-duration" : matrix[nRoom][nPage].timer});
+    }
   }
 
 endingGame = (condition) => {
@@ -148,7 +150,7 @@ pop_timeEnds = () => {
 }
 
 // adding hover and down state to objects
-// in order the function will work the items need to have the class "state" and "data-num"
+// in order the function will work the items need to have the class "state"
 pop_hover_down = () => {
     let src;
     $(`#${matrix[nRoom][nPage].divName} .state`).on({
