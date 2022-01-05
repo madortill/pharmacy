@@ -42,5 +42,5 @@ r1p7_dropped_correct = (drag, drop) => {
     }
     counter_r1p7_signs_order++;
     //new sign appear
-    switch_class($(`#${matrix[nRoom][nPage].divName} .drag-${arr_r1p7_signs_order[counter_r1p7_signs_order]}`), "none", "block");
+    switch_class($(`#${matrix[nRoom][nPage].divName} drag.data-num-${arr_r1p7_signs_order[counter_r1p7_signs_order]}`), "none", "block");
 }
