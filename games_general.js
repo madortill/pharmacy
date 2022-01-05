@@ -185,3 +185,16 @@ click_identify = (item) => {
         V_X(false);
     }
 }
+
+// called to add to drop and drag
+// in order the function will work the items need to have the class "drag"/"drop"
+//r1p7
+pop_drag_drop = () => {
+    $(`#${matrix[nRoom][nPage].divName} .drag`).draggable({
+        revert:"invalid",
+        revertDuration: 200,
+        containment: "window",
+        drag: function(event, ui) {}
+    }).css("position", "absolute");
+
+}
