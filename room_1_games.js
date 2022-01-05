@@ -3,8 +3,8 @@
 // r1p3
 pop_sign_click = () => {
     // add event listener for each item
-    $(`#${matrix[nRoom][nPage].divName} .item`).on("click", () => {
-        click_identify($(this));
+    $(`#${matrix[nRoom][nPage].divName} .item`).on("click", (event) => {
+        click_identify($(event.target));
     }); 
 }
 
