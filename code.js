@@ -49,13 +49,25 @@ var Arr_1 = [
     type: "content"
   },
   {
-    // second game- page 6
+    // page 6
     divName: ["r1p6"],
-    functions: ["pop_hover_down()"],
+    functions: [""],
     type: "content"
   },
-
-
+  {
+    // second game- page 7
+    divName: ["r1p7"],
+    functions: ["pop_hover_down()", "pop_drag_drop"],
+    type: "game",
+    feedback: {
+      correct: "array",
+      incorrect: "array"
+    },
+    instructions_feedback: {
+      correct: "מזל שהמשימה הייתה תלוייה בכם",
+      incorrect: "יא חסרי מודעות..."
+    }
+  },
 ];
 
 // therapy room
