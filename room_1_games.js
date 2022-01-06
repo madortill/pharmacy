@@ -23,22 +23,28 @@ counter_r1p7_signs_order = 0;
 arr_r1p7_signs_order = [1,2,3,4,5,6,7,8];
 r1p7_dropped_correct = (drag, drop) => {
     var $this = drop;
-    drag.position({
-        my: "center top",
-        at: "top center",
-        of: $this,
-        using: function(pos) {
-            $(this).animate(pos, 200, "linear");
-        }
-    });
     // disable item dragging
     drag.draggable("option", "disabled", true);
     // vertical position
     if (drop.hasClass("empty")) {
-        drag.css("top", "10vw");
+        drag.position({
+            my: "top bottom",
+            at: "top center",
+            of: $this,
+            using: function(pos) {
+                $(this).animate(pos, 200, "linear");
+            }
+        });
         drop.removeClass("empty");
     } else {
-        drag.css("top", "22vw");
+        drag.position({
+            my: "top top",
+            at: "top center",
+            of: $this,
+            using: function(pos) {
+                $(this).animate(pos, 200, "linear");
+            }
+        });
     }
     counter_r1p7_signs_order++;
     if (counter_r1p7_signs_order < arr_r1p7_signs_order.length) {
