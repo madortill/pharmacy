@@ -113,6 +113,7 @@ body, #main {
   overflow: hidden;
   direction: rtl;
   font-family: "Rubik";
+  user-select: none;
 }
 
 .page {
@@ -761,10 +762,10 @@ body, #main {
 
 #r1p7 .sign {
   position: absolute;
-  top: 40vw;
+  top: 0vw;
   width: 14vw;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  /* left: 50%; */
+  /* transform: translate(-50%, 0%); */
 }
 
 #r1p7 .hands {
