@@ -762,10 +762,11 @@ body, #main {
 
 #r1p7 .sign {
   position: absolute;
-  top: 0vw;
-  width: 14vw;
-  /* left: 50%; */
-  /* transform: translate(-50%, 0%); */
+  top: 40vw;
+  width: 15vw;
+  z-index: 1;
+  left: 42.5vw;
+  margin-top: 2vw;
 }
 
 #r1p7 .hands {
