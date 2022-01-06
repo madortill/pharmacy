@@ -41,6 +41,11 @@ r1p7_dropped_correct = (drag, drop) => {
         drag.css("top", "22vw");
     }
     counter_r1p7_signs_order++;
-    //new sign appear
-    switch_class($(`#${matrix[nRoom][nPage].divName} drag.data-num-${arr_r1p7_signs_order[counter_r1p7_signs_order]}`), "none", "block");
+    if (counter_r1p7_signs_order < arr_r1p7_signs_order.length) {
+        //new sign appear
+        switch_class($(`#${matrix[nRoom][nPage].divName} .drag.data-num-${arr_r1p7_signs_order[counter_r1p7_signs_order]}`), "none", "block");
+    } else {
+        V_X(true);
+    }
+
 }
