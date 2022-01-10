@@ -321,7 +321,7 @@ body, #main {
 }
 
 #lesson-map-1 .topic {
-  margin-right: 11vw;
+  margin-right: 13.4vw;
 }
 
 #lesson-map-2 .topic {
@@ -678,6 +678,31 @@ body, #main {
   align-items: center;
 }
 
+.ogdan-drag-flex {
+  width: 38vw;
+  height: 100%;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  left: 0;
+  top: 4vw;
+  position: absolute;
+  align-items: center;
+}
+
+.folder {
+  width: 23vw;
+}
+
+.trash {
+  width: 17vw;
+}
+
+.file {
+  position:absolute;
+  width: 10.5vw;
+}
+
 /* r1p3 */
 
 #r1p3 {
@@ -762,11 +787,11 @@ body, #main {
 
 #r1p7 .sign {
   position: absolute;
-  top: 40vw;
+  top: 38vw;
   width: 15vw;
   z-index: 1;
   left: 42.5vw;
-  margin-top: 2vw;
+  padding-top: 2vw;
 }
 
 #r1p7 .hands {
@@ -790,4 +815,63 @@ body, #main {
 #r1p7 .instructions-flex {
   top: 6vh;
   right: 2.5vw;
+}
+
+/* r1p10 */
+
+#r1p10 {
+  background-image: url("assets/media/exer3/exer3bg.svg");
+}
+
+#r1p10 .ahami-head {
+  width: 5rem;
+  margin-left: 1vw;
+}
+
+#r1p10 .instructions {
+  font-size: 2.4rem;
+  width: 70vw;
+  /* right: 10vw; */
+}
+
+#r1p10 .instructions-flex {
+  top: 6vh;
+  right: 11.5vw;
+  color: white;
+}
+
+#r1p10 .file.data-num-1 {
+  top: 14vw;
+  left: 81vw;
+  transform: rotate(2deg);
+}
+
+#r1p10 .file.data-num-2 {
+  top: 16vw;
+  left: 70vw;
+  transform: rotate(-3deg);
+}
+
+#r1p10 .file.data-num-3 {
+  top: 12vw;
+  left: 57vw;
+  transform: rotate(1deg);
+}
+
+#r1p10 .file.data-num-4 {
+  top: 31vw;
+  left: 77vw;
+  transform: rotate(8deg);
+}
+
+#r1p10 .file.data-num-5 {
+  top: 33vw;
+  left: 60vw;
+  transform: rotate(5deg);
+}
+
+#r1p10 .file.data-num-6 {
+  top: 27vw;
+  left: 48vw;
+  transform: rotate(-6deg);
 }
