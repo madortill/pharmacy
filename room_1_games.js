@@ -20,7 +20,7 @@ r1p3_clicked_correct = (item) => {
 }
 
 counter_r1p7_signs_order = 0;
-arr_r1p7_signs_order = [1,2,3,4,5,6,7,8];
+arr_r1p7_signs_order = [1,8,7,6,2,4,5,3];
 r1p7_dropped_correct = (drag, drop) => {
     var $this = drop;
     // disable item dragging
@@ -53,5 +53,26 @@ r1p7_dropped_correct = (drag, drop) => {
     } else {
         V_X(true);
     }
+}
 
+var counter_r1p10_folder = 0;
+var counter_r1p10_trash = 0;
+r1p10_dropped_correct = (drag, drop) => {
+    // disable item dragging
+    drag.draggable("option", "disabled", true);
+    // vertical position
+    if (drop.hasClass("folder")) {
+        counter_r1p10_folder++;
+        drag.animate({width: `5vw`}, 100, function() {
+            switch_class(drag, "block", "none");
+        })
+    } else if (drop.hasClass("trash")) {
+        counter_r1p10_trash++;
+        drag.attr("src", `assets/media/exer3/pieceofshit${counter_r1p10_trash}.svg`);
+        drag.css("width", "7vw");
+    }
+    // winning
+    if ((counter_r1p10_folder === $(`#${matrix[nRoom][nPage].divName} .drag-1`).length) && ((counter_r1p10_trash === $(`#${matrix[nRoom][nPage].divName} .drag-2`).length))) {
+        V_X(true);
+    } 
 }
