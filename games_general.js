@@ -180,7 +180,7 @@ click_identify = (item) => {
     // if the user clicked correct item
     if ((item).hasClass("correct")) {
         // eval(matrix[nRoom][nPage].divName + "_clicked_correct(" + item + ")");
-        window [matrix[nRoom][nPage].divName + "_clicked_correct"](item);
+        window[matrix[nRoom][nPage].divName + "_clicked_correct"](item);
     }
     // if the user clicked incorrect item, the game is over
     else {
@@ -206,7 +206,7 @@ pop_drag_drop = () => {
             drop: function(event, ui) {
                 //dropped correct
                 if (ui.draggable.hasClass(`drag-${i}`)) {
-                    r1p7_dropped_correct(ui.draggable, $(this));
+                    window[matrix[nRoom][nPage].divName + "_dropped_correct"](ui.draggable, $(this));
                 }
                 //dropped incorrect
                 else {
@@ -216,4 +216,3 @@ pop_drag_drop = () => {
         });
     }
 }
-
