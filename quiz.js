@@ -1,8 +1,10 @@
 arr_quiz_1 = [
     {
         question: "מה חייב להימצא בחדר המתנה?",
-        correct_answer: `ספסלים, פחים, לוח מודעות, שילוט המורה על "איסור עישון" ואמצעי הגנה מפגעי מזג האוויר.`,
-        wrong_answer: [`מזגן, פחים, טלוויזיה, שילוט המורה על "איסור עישון" ואמצעי הגנה מפגעי מזג האוויר.` ,`ספסלים, פחים, טלוויזיה, שילוט המורה על "איסור עישון" ואמצעי הגנה מפגעי מזג האוויר.`]
+        correct_answer: "טלי",
+        wrong_answer: ["מרב" ,"יובל","ניצן"]
+        // correct_answer: `ספסלים, פחים, לוח מודעות, שילוט המורה על "איסור עישון" ואמצעי הגנה מפגעי מזג האוויר.`,
+        // wrong_answer: [`מזגן, פחים, טלוויזיה, שילוט המורה על "איסור עישון" ואמצעי הגנה מפגעי מזג האוויר.` ,`מזגן, ספסלים, פחים, טלוויזיה בה מוצגים נהלי הרפואה ביחידה ואמצעי הגנה מפגעי מזג האוויר.` ,`ספסלים, פחים, טלוויזיה, שילוט המורה על "איסור עישון" ואמצעי הגנה מפגעי מזג האוויר.`]
     }, 
     
 ]
@@ -24,7 +26,7 @@ type_quiz = () => {
         if (i === correct_answer) {
             $(`#${matrix[nRoom][nPage].divName} .answer.data-num-${i}`).text(question_array[question_num].correct_answer);
         } else {
-            let wrong_answer = Math.floor(Math.random() * (ANSWER_NUM - 1))
+            let wrong_answer = Math.floor(Math.random() * (question_array[question_num].wrong_answer.length));
             $(`#${matrix[nRoom][nPage].divName} .answer.data-num-${i}`).text(question_array[question_num].wrong_answer[wrong_answer]);
             question_array[question_num].wrong_answer.splice(wrong_answer, 1);
         }
