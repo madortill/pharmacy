@@ -19,8 +19,6 @@ type_quiz = () => {
     // number between 1-4
     let correct_answer = Math.floor(Math.random() * ANSWER_NUM) + 1;
     $(`#${matrix[nRoom][nPage].divName} .questions`).text(question_array[question_num].question);
-    // question won't repeat
-    question_array.splice(question_num, 1);
     // fill answers
     for (let i = 1; i <= ANSWER_NUM; i++) {
         if (i === correct_answer) {
@@ -31,4 +29,6 @@ type_quiz = () => {
             question_array[question_num].wrong_answer.splice(wrong_answer, 1);
         }
     }
+    // question won't repeat
+    question_array.splice(question_num, 1);
   }
