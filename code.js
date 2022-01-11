@@ -81,6 +81,34 @@ var Arr_1 = [
     functions: [""],
     type: "content"
   },
+  {
+    // third game- page 10
+    divName: ["r1p10"],
+    functions: ["pop_hover_down()", "pop_drag_drop()"],
+    type: "game",
+    feedback: {
+      correct: "array",
+      incorrect: "array"
+    },
+    instructions_feedback: {
+      correct: "אוגדן של קפדן!",
+      incorrect: "אוגדן של מפסידן..."
+    }
+  },
+  {
+    // page 11
+    divName: ["questions"],
+    functions: [""],
+    type: "quiz",
+    questionType: "finish"
+  },
+  {
+    // page 12
+    divName: ["questions"],
+    functions: [""],
+    type: "quiz",
+    questionType: "finish"
+  },
 ];
 
 // therapy room
