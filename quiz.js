@@ -14,7 +14,9 @@ const ANSWER_NUM = 4;
 type_quiz = () => {
     // take random question from array
     let question_array = window[`arr_quiz_${nRoom}`];
+    // random question from array
     let question_num = Math.floor(Math.random() * window[`arr_quiz_${nRoom}`].length);
+    // number between 1-4
     let correct_answer = Math.floor(Math.random() * ANSWER_NUM) + 1;
     $(`#${matrix[nRoom][nPage].divName} .questions`).text(question_array[question_num].question);
     // question won't repeat
@@ -26,8 +28,7 @@ type_quiz = () => {
         } else {
             let wrong_answer = Math.floor(Math.random() * (ANSWER_NUM - 1))
             $(`#${matrix[nRoom][nPage].divName} .answer.data-num-${i}`).text(question_array[question_num].wrong_answer[wrong_answer]);
-            question_array.splice(question_num, 1);
-            window[question_array[question_num].wrong_answer].splice(wrong_answer, 1);
+            question_array[question_num].wrong_answer.splice(wrong_answer, 1);
         }
     }
   }
